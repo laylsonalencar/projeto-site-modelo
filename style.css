@@ -14,8 +14,8 @@
   .button { grid-area: button; }
   .wrapper{
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 7%;
+    left: 7%;
     transform: translate(-50%, -50%);
   }
   
@@ -32,7 +32,6 @@
     letter-spacing: 2px;
     text-align: center;
     position: relative;
-    align-items: flex-start;
     transition: all .35s;
   }
   
