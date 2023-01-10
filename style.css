@@ -1,0 +1,24 @@
+.container {  display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "button logo button2"
+      "conteudo conteudo conteudo"
+      ". . contatos"
+      "rodapé rodapé rodapé";
+  }
+  
+  .button { grid-area: button; }
+  
+  .logo { grid-area: logo; }
+  
+  .button2 { grid-area: button2; }
+  
+  .conteudo { grid-area: conteudo; }
+  
+  .contatos { grid-area: contatos; }
+  
+  .rodapé { grid-area: rodapé; }
+  
