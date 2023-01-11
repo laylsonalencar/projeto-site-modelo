@@ -20,6 +20,7 @@
     font-size: 28px;
     padding: 20px;
     width: 200px;
+
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -48,14 +49,14 @@
   .button:hover span:after {
     opacity: 1;
     right: 0;
-  
+    }
   .logo { grid-area: logo; }
   
   .button2 { grid-area: button2; }
+
   
   .conteudo { grid-area: conteudo; }
   
   .contatos { grid-area: contatos; }
   
   .rodapé { grid-area: rodapé; }
-  
