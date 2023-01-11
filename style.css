@@ -1,3 +1,4 @@
+
 .container {  display: grid;
     grid-template-columns: 0.8fr 1.2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -11,6 +12,52 @@
   }
   
   .button { grid-area: button; }
+  .wrapper{
+    position: fixed;
+    top: 7%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+  }
+  
+  a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: #fff;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
   
   .logo { grid-area: logo; }
   
