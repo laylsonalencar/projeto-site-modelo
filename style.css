@@ -12,7 +12,7 @@
   }
   
   .button { grid-area: button; }
-<<<<<<< Updated upstream
+ Updated upstream
   .wrapper{
     position: fixed;
     top: 7%;
@@ -96,7 +96,7 @@
   .button:hover span:after {
     opacity: 1;
     right: 0;
->>>>>>> Stashed changes
+/*>>>>>>> Stashed changes*/
   }
   
   .logo { grid-area: logo; }
@@ -126,4 +126,60 @@
   .contatos { grid-area: contatos; }
   
   .rodapé { grid-area: rodapé; }
+
+  .foto {
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    
+  }
+  .foto img {
+    width: 100%;
+    height: auto;
+  }
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  .images {
+
+
+    --g:#0000 ,#000 .5deg 90deg,#0000 91deg;
+    --m:
+      conic-gradient(from 45deg ,var(--g)) 20px 0  no-repeat,
+      conic-gradient(from 135deg,var(--g)) 0 20px  no-repeat,
+      conic-gradient(from 225deg,var(--g)) -20px 0 no-repeat,
+      conic-gradient(from 315deg,var(--g)) 0 -20px no-repeat;
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    transition: .3s linear;
+    filter: grayscale(.5);
+    cursor: pointer;
+  }
+  .images:hover {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+    filter: grayscale(0);
+  }
   
+ 
