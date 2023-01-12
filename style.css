@@ -41,7 +41,7 @@
     z-index: 2;
   }
   
-  a:after{
+   a:after{
     position: absolute;
     content: "";
     top: 0;
@@ -52,11 +52,11 @@
     transition: all .35s;
   }
   
-  a:hover{
+   .bugado a:hover{
     color: #fff;
   }
   
-  a:hover:after{
+  .bugado a:hover:after{
     width: 100%;
 }
   .button {
